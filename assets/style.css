@@ -1320,3 +1320,53 @@ li.current-menu-item a {
 #portfolio-container .cbp-wrapper-outer {
   padding: 5px;
 }
+
+@media (max-width:768px) {
+  #masthead.site-header.left-sidebar-menu #site-branding a {
+    padding: 0;
+  }
+  
+  .logo-brand .heading-block h1.block-size-1 {
+    font-size: 30px;
+    left: 0;
+    margin-left: .48em;
+    margin-bottom: 0;
+  }
+  
+  #masthead.site-header {
+    position: fixed;
+  }
+  
+  .entry-content .heading-block h1.block-size-1 {
+    line-height: 40px;
+  }
+  
+  .entry-content .heading-block h1.block-size-1:after {
+    content: "-";
+    display: block;
+    margin: .5em .1em 0;
+  }
+  
+  .caster-portfolio-wrap .portfolio-heading {
+    top: 0;
+  }
+  
+  .caster-portfolio-wrap .cbp-l-filters-text.text-right, .caster-portfolio-wrap .cbp-l-filters-text.text-right+.cbp-l-subfilters {
+    text-align: left !important;
+  }
+  
+  .caster-portfolio-wrap .cbp-l-filters-text .cbp-filter-item {
+    padding: 2px;
+    margin-bottom: 0;
+  }
+  
+  .caster-portfolio-wrap .cbp-l-filters-text .cbp-filter-item:after {
+    content: "/";
+    display: inline-block;
+    margin-left: 7px;
+  }
+  
+  .caster-portfolio-wrap .cbp-l-filters-text .cbp-filter-item:last-child:after {
+    display: none;
+  }
+}

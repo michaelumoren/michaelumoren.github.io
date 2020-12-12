@@ -162,14 +162,14 @@ var CASTER = CASTER || {};
               e('#top-menu li').removeClass("current-menu-item");
               e('#top-menu a[data-section-id="section_1"]').parent("li").addClass("current-menu-item");
             }
-            else if (window.pageYOffset >= e("#section_2").offset().top && window.pageYOffset < e("#section_3").offset().top) {
+            else if (window.pageYOffset >= e("#section_2").offset().top) {
               e('#top-menu li').removeClass("current-menu-item");
               e('#top-menu a[data-section-id="section_2"]').parent("li").addClass("current-menu-item");
             }
-            else if (window.pageYOffset >= e("#section_3").offset().top) {
-              e('#top-menu li').removeClass("current-menu-item");
-              e('#top-menu a[data-section-id="section_3"]').parent("li").addClass("current-menu-item");
-            }
+            // else if (window.pageYOffset >= e("#section_3").offset().top) {
+            //   e('#top-menu li').removeClass("current-menu-item");
+            //   e('#top-menu a[data-section-id="section_3"]').parent("li").addClass("current-menu-item");
+            // }
           })
           e(window).trigger("scroll");
         },
